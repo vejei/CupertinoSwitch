@@ -1,0 +1,3 @@
+include ':cupertinoswitch'
+include ':sample'
+rootProject.name = "CupertinoSwitch"
