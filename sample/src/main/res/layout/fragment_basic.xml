@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <io.github.vejei.cupertinoswitch.CupertinoSwitch
+        android:id="@+id/cupertino_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <io.github.vejei.cupertinoswitch.CupertinoSwitch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:trackOffColor="#dddddd"
+        app:trackOnColor="@color/purple_500"/>
+
+    <io.github.vejei.cupertinoswitch.CupertinoSwitch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:sliderColor="@color/purple_500"
+        app:trackOffColor="@color/purple_700"/>
+
+    <io.github.vejei.cupertinoswitch.CupertinoSwitch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:switchWidth="100dp"
+        app:sliderShadowColor="@color/purple_700"
+        app:sliderShadowRadius="16dp"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
