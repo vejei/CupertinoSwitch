@@ -180,9 +180,12 @@ public class CupertinoSwitch extends View {
         }
 
         sliderAnimator.setDuration(switchDuration);
-        sliderAnimator.addUpdateListener(animation -> {
-            sliderCenterX = (float) animation.getAnimatedValue();
-            invalidate();
+        sliderAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+            @Override
+            public void onAnimationUpdate(ValueAnimator animation) {
+                sliderCenterX = (float) animation.getAnimatedValue();
+                invalidate();
+            }
         });
         sliderAnimator.addListener(new AnimatorListenerAdapter() {
 
@@ -203,9 +206,12 @@ public class CupertinoSwitch extends View {
         });
 
         trackAnimator.setDuration(switchDuration);
-        trackAnimator.addUpdateListener(animation -> {
-            trackColor = (int) animation.getAnimatedValue();
-            invalidate();
+        trackAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+            @Override
+            public void onAnimationUpdate(ValueAnimator animation) {
+                trackColor = (int) animation.getAnimatedValue();
+                invalidate();
+            }
         });
     }
 
