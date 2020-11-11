@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">CupertinoSwitch</string>
+    <string name="add_switch_button_text">Add switch</string>
 </resources>
